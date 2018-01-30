@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<!--
+/*
+ * Turiknox_LinkGuestOrders
+ * @category   Turiknox
+ * @package    Turiknox_LinkGuestOrders
+ * @copyright  Copyright (c) 2018 Turiknox
+ * @license    https://github.com/Turiknox/magento2-linkguestorders/blob/master/LICENSE.md
+ * @version    1.0.0
+ */
+ -->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <section id="customer">
+            <group id="linkorders" translate="label" type="text" sortOrder="100" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>Link Guest Orders</label>
+                <field id="enable" translate="label" type="select" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Enable</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                    <comment><![CDATA[Link guest orders to customers' email addresses when they register]]></comment>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>
